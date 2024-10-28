@@ -1,9 +1,11 @@
 ---
+import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const pageTitle = "My Astro Learning Blog";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={pageTitle}>
 	<main>
 		<svg
 			class="astro-a"
@@ -35,9 +37,14 @@ import Card from '../components/Card.astro';
 		</svg>
 		<a href="/astro">Home</a>
         <a href="/astro/about/">About</a>
-		<a href="/astro/blog/">Blog</a>
-		<h1>My Astro Learning Blog</h1>
+		<a href="/astro/blog/">{pageTitle}</a>
+		<h1>{pageTitle}</h1>
          <p>This is where I will post about my journey learning Astro.</p>
+         <ul>
+            <li><a href="/astro/posts/post-1/">Post 1</a></li>
+            <li><a href="/astro/posts/post-2/">Post 2</a></li>
+            <li><a href="/astro/posts/post-3/">Post 3</a></li>
+          </ul>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
