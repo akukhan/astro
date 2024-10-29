@@ -1,8 +1,17 @@
 ---
+import { buildUrl } from "../scripts/helpers";
 ---
-<div class="nav-links">
-    <a href="/">Home</a>
-    <a href="astro/about/">About</a>
+<!-- <div class="nav-links">
+    <a href="/astro">Home</a>
+    <a href={buildUrl('/about')}>About</a>
     <a href="astro/blog/">Blog</a>
     <a href="astro/tags/">Tags</a>
-</div>
+</div> -->
+
+<div class="nav-links">
+    <a href={buildUrl('/')}>Home</a>
+    <a href={buildUrl('/about')}>About</a>
+    <a href={buildUrl('/blog')}>Blog</a>
+    <a href={buildUrl('/tags')}>Tags</a>
+  </div>
+  
