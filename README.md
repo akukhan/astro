@@ -52,3 +52,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+#### what is hydration of component on Astro?
+- when the clint is already load,no realoding is necreasary but the fucntion to click will call the js to make the data dynamic
+
